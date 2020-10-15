@@ -1,0 +1,9 @@
+---
+{% for item in data %}
+{{ item.name }}:
+    hostname: {{ item.ip }}
+    groups:
+        - cisco_group
+    data:
+        layer: {{ item.role }}
+{% endfor %}
