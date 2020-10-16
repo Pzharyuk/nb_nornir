@@ -10,13 +10,13 @@ import sys
 console = Console()
 sys.tracebacklimit = 0
 
-#Empty lists to be used later in the code #
+# EMPTY LISTS TO BE USED LATER IN THE CODE #
 name = []
 ip = []
 role = []
 dev = []
 
-# Make a request to Netbox and get devices for a specific site #
+# MAKE A REQUEST TO NETBOX AND GET DEVICES FOR A SPECIFIC SITE #
 try:
     devices = nb_prd.dcim.devices.filter(
         site=input("Enter site code: "), 
@@ -26,13 +26,13 @@ try:
 except pynetbox.core.query.RequestError as e:
     console.print("[bold red]{}[/bold red]".format(e.error))
 
-# Create 3 different lists for device name, ip and role, append to empty lists created above #
+# COLLECT AND ADD DEVICE INFORMATION FROM NETBOX TO EMPTY LIST AND REMOVE THE CIDR FROM THE IP ADDRESS #
 for device in devices:
     name.append(device.name)
     ip.append(device.primary_ip.address[:-3])
     role.append(device.device_role.slug)
 
-# Append device dictionary to dev = [] list
+# CREATE AND APPEND DEVICE DICTIONARY TO DEV = [] LIST #
 for device in devices:
     dev.append(
         dict(
@@ -42,20 +42,20 @@ for device in devices:
     )
 )
 
-# Lookup hosts.j2 template to render hosts.yaml file #
+# LOOKUP HOSTS.J2 TEMPLATE TO RENDER HOSTS.YAML FILE #
 loader = jinja2.FileSystemLoader(searchpath="./templates")
 jenv = jinja2.Environment(loader=loader)
 template = jenv.get_template('hosts.j2')
 hosts_out = template.render(data=dev)
 
-# Loop over Netbox devices and add devices to hosts.yaml file #
+# LOOP OVER NETBOX DEVICES AND ADD DEVICE INFORMATION TO HOSTS.YAML FILE #
 console.print("[bold #f58142]Rendering Host File:[/bold #f58142]")
 for r in dev:
     # Building device specific templates
     with open("./inventory/hosts.yaml", "w") as f:
         f.write(hosts_out)
 
-# Just for fun, output the devices to a table using rich module #
+# JUST FOR FUN, OUTPUT THE DEVICES TO A TABLE USING RICH LIBRARY #
 table = Table(show_header=True, header_style="bold #4248f5")
 table.add_column("Device", style="bold green")
 table.add_column("IP", justify="right", style="blue")
@@ -64,4 +64,4 @@ for (a,b,c) in itertools.zip_longest(name,ip,role):
     table.add_row(a,b,c)
 console.print(table)
 console.print("""[bold #f58142]host.yaml file has succesfully been created\n
-                please check your invenory (./inventory) directory! :thumbs_up:[/bold #f58142]""")
+                 please check your invenory (./inventory) directory! :thumbs_up:[/bold #f58142]""")
