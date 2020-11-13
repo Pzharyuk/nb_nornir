@@ -6,36 +6,33 @@ This code is used to gererate a Nornir host file, it was specifically designed t
 <i>1) Netbox up and running</i><br/>
 <i>2) Device roles created</i><br/>
 <i>3) Site(s) and devices added to Netbox with IP addresses</i>
-You have two options, if you have familiarity with Python, use the cookiecutter steps. Otherwise you can manually create a copy of this repo template. 
 
+### Cloning repo and installing requirements via pip
 
-### Cookiecutter Automated Repo Creation
+1. Clone this repo `git clone https://github.com/Pzharyuk/nb_nornir.git`
+2. cd into `nb_nornir'
+3. Create python virtual environment `python3 -m venv venv'
+4. Activate virtual environment `source venv/bin/activate`
+5. Install required python packages via `pip install -r requirements.txt`
 
-This process uses [cookiecutter](https://github.com/audreyr/cookiecutter) to auto-generate the files for you. This is helpful if you create multiple use cases. 
-
-> Note: This template assumes the BSD 3-Clause License, you can change it be other licenses afterwards if that is not what you want.
-
-
-1. Issue this command `pip install cookiecutter` to get ready to use the template.
-2. Use this command and answer the questions: `cookiecutter https://github.com/CiscoDevNet/code-exchange-repo-template`
-3. Update the [README](./README.md), replacing the contents below as described in text within each section of the README. Feel free to combine or omit sections where appropriate. 
-4. Update the [LICENSE](./LICENSE), replacing the file with the license selected for your code. See the *Licensing info* section of this README for more info. 
-5. Delete these instructions and everything up to the _Project Title_ from the README.
-6. Write some great software and [submit](https://developer.cisco.com/codeexchange/github/submit) it to Code Exchange and/or Automation Exchange.
-
-
+### Using .ENV
+This project uses .env file to popopulate environment variables used in the code<br/>
+1. Populate .env file with Netbox url and token
+```
+PRD_TOKEN=123423454565678678123234345
+PRD_URL=https://example-netbox.com
+DEV_TOKEN=123423454565678678123234345
+DEV_URL=http://example-netbox.com:8085
+```
 
 #### Example 
-```bash
-use-cases$ cookiecutter https://github.com/CiscoDevNet/code-exchange-repo-template
-project_name [my-awesome-devnet-code-exchange-project]: my-first-project
-project_description [baseline DevNet Code Exchange Project]: New Things to come!
-author_name [Your Name Here]: User Name
-author_email [youremail@domain.com]: user@cisco.com
-use-cases$ tree
-.DS_Store                          devnet-code-exchange/              my-first-project/
-cookiecutter-devnet-code-exchange/ 
-use-cases$ tree my-first-project/
+```zsh
+~ » git clone https://github.com/Pzharyuk/nb_nornir.git
+~ » cd nb_nornir
+~/nb_nornir  ‹main› » python3 -m venv venv
+~/nb_nornir  ‹main› » source venv/bin/activate
+~/nb_nornir  ‹main› » 
+tree my-first-project/
 my-first-project/
 ├── LICENSE
 ├── NOTICE
