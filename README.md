@@ -1,4 +1,4 @@
-# Generate dynamic host.yaml for Nornir from Netbox
+# Generate dynamic host.yaml for Nornir from Netbox - Draft
 This code is used to gererate a Nornir host file, it was specifically designed to be used with Cisco devices, but can be changed to be used with any vendor.
 
 ## Instructions
