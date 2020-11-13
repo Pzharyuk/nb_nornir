@@ -57,5 +57,5 @@ If you are only creating one use case, this process is probably easier.
 6. Write some great software and [submit](https://developer.cisco.com/codeexchange/github/submit) it to Code Exchange and/or Automation Exchange.
 
 ### Refference Links:
-> Netbox GitHub page:</b> https://github.com/netbox-community/netbox.git
+> Netbox GitHub page:</b> https://github.com/netbox-community/netbox.git/br
 > Netbox on Docker GitHub page:</b> https://github.com/netbox-community/netbox-docker.git
