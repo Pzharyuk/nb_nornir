@@ -37,11 +37,9 @@ Enter site code: cml2-example-site
 ```
 #Example output will be presented using tables and will be color coded using rich python library.<br/>
 ![Example output](/EkL96qxUYAYv1wt.png)
-Format: ![Alt Text](url)
 <br/>
 #At this point the /inventory/hosts.yaml file should be populated.<br/>
 ![Example output2](/EkL6Go5UwAAn7kk.jpeg)
-Format: ![Alt Text](url)
 
 ### Refference Links:
 > Netbox GitHub page:</b> https://github.com/netbox-community/netbox.git/<br/>
