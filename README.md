@@ -35,11 +35,11 @@ DEV_URL=http://example-netbox.com:8085
 (venv) ~/nb_nornir  ‹main› » python gen_hostfile_from_nb.py
 Enter site code: cml2-example-site 
 ```
-#Example output will be presented using tables and will be color coded using rich python library.
+#Example output will be presented using tables and will be color coded using rich python library.<br/>
 ![Example output](/EkL96qxUYAYv1wt.png)
 Format: ![Alt Text](url)
-
-#At this point the /inventory/hosts.yaml file should be populated.
+<br/>
+#At this point the /inventory/hosts.yaml file should be populated.<br/>
 ![Example output2](/EkL6Go5UwAAn7kk.jpeg)
 Format: ![Alt Text](url)
 
