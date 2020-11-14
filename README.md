@@ -3,9 +3,9 @@ This code is used to gererate a Nornir host file, it was specifically designed t
 
 ## Instructions
 ### Netbox Prerequisites:
-<i>1) Netbox up and running</i><br/>
-<i>2) Device roles created</i><br/>
-<i>3) Site(s) and devices added to Netbox with IP addresses</i>
+*1. Netbox up and running*<br/>
+*2. Device roles created*<br/>
+*3. Site(s) and devices added to Netbox with IP addresses*
 
 ### Cloning repo and installing requirements via pip
 
@@ -35,10 +35,10 @@ DEV_URL=http://example-netbox.com:8085
 (venv) ~/nb_nornir  ‹main› » python gen_hostfile_from_nb.py
 Enter site code: cml2-example-site 
 ```
-#Example output will be presented using tables and will be color coded using rich python library.<br/>
+# Example output will be presented using tables and will be color coded using rich python library.<br/>
 ![Example output](/EkL96qxUYAYv1wt.png)
 <br/>
-#At this point the /inventory/hosts.yaml file should be populated.<br/>
+# At this point the /inventory/hosts.yaml file should be populated.<br/>
 ![Example output2](/EkL6Go5UwAAn7kk.jpeg)
 
 ### Refference Links:
