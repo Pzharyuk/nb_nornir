@@ -31,27 +31,17 @@ DEV_URL=http://example-netbox.com:8085
 ~ » cd nb_nornir
 ~/nb_nornir  ‹main› » python3 -m venv venv
 ~/nb_nornir  ‹main› » source venv/bin/activate
-~/nb_nornir  ‹main› » 
-tree my-first-project/
-my-first-project/
-├── LICENSE
-├── NOTICE
-└── README.md
-
-0 directories, 3 files
-use-cases$
+(venv) ~/nb_nornir  ‹main› » pip install -r requirements.txt
+(venv) ~/nb_nornir  ‹main› » python gen_hostfile_from_nb.py
+Enter site code: cml2-example-site 
 ```
+#Example output will be presented using tables and will be color coded using rich python library.
+![Example output](/EkL96qxUYAYv1wt.png)
+Format: ![Alt Text](url)
 
-### Manual Repo Creation
-
-If you are only creating one use case, this process is probably easier. 
-
-1. Create a new repository.
-2. Copy all the files inside `manual-sample-repo` into your new repository. 
-3. Update the [README](./README.md), replacing the contents below as described in text within each section of the README. Feel free to combine or omit sections where appropriate. 
-4. Update the [LICENSE](./LICENSE), replacing the file with the license selected for your code. See the *Licensing info* section of this README for more info. 
-5. Delete these instructions and everything up to the _Project Title_ from the README.
-6. Write some great software and [submit](https://developer.cisco.com/codeexchange/github/submit) it to Code Exchange and/or Automation Exchange.
+#At this point the /inventory/hosts.yaml file should be populated.
+![Example output](/EkL6Go5UwAAn7kk.jpeg.png)
+Format: ![Alt Text](url)
 
 ### Refference Links:
 > Netbox GitHub page:</b> https://github.com/netbox-community/netbox.git/<br/>
