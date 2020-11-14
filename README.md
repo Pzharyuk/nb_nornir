@@ -40,7 +40,7 @@ Enter site code: cml2-example-site
 Format: ![Alt Text](url)
 
 #At this point the /inventory/hosts.yaml file should be populated.
-![Example output](/EkL6Go5UwAAn7kk.jpeg.png)
+![Example output2](/EkL6Go5UwAAn7kk.jpeg.png)
 Format: ![Alt Text](url)
 
 ### Refference Links:
