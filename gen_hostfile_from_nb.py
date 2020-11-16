@@ -62,5 +62,4 @@ table.add_column("Role", justify="right", style="yellow")
 for (a,b,c) in itertools.zip_longest(name,ip,role):
     table.add_row(a,b,c)
 console.print(table)
-console.print("""[bold #f58142]host.yaml file has succesfully been created\n
-                 please check your invenory (./inventory) directory! :thumbs_up:[/bold #f58142]""")
+console.print("""[bold #f58142]host.yaml file has succesfully been created :thumbs_up:[/bold #f58142]""")
