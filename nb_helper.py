@@ -13,8 +13,8 @@ session = requests.Session()
 session.verify = False
 
 # CONNECT TO DEV NETBOX ENVIROMENT #
-nb_prd = pynetbox.api(
+nb = pynetbox.api(
     os.getenv("NB_URL"), 
     token=os.getenv("NB_TOKEN") # TOKEN IS LOADED INTO ENV FROM .env FILE #
 )
-nb_prd.http_session = session # USED WITH HTTPS #
+nb.http_session = session # USED WITH HTTPS #
