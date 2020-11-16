@@ -20,8 +20,7 @@ dev = []
 try:
     devices = nb_prd.dcim.devices.filter(
         site=input("Enter site code: "), 
-        has_primary_ip=True, 
-        platform='ios',
+        has_primary_ip=True
     )
 except pynetbox.core.query.RequestError as e:
     console.print("[bold red]{}[/bold red]".format(e.error))
