@@ -1,11 +1,21 @@
 # Generate dynamic host.yaml for Nornir from Netbox
-This code is used to gererate a Nornir host file, it was specifically designed to be used with Cisco devices, but can be changed to be used with any vendor.
+This code is used to gererate a Nornir host file, it was specifically designed to be used with Cisco devices, but can be changed to be used with any vendor. 
+Cisco Modeling Labs (CML2.1) is used to generate a host file. 
 
-## Instructions
 ### Netbox Prerequisites:
 *1. Netbox up and running*<br/>
 *2. Device roles created*<br/>
 *3. Site(s) and devices added to Netbox with IP addresses*
+
+### CML2 Prerequisites:
+*1. Go to https://devnetsandbox.cisco.com/RM/Diagram/Index/685f774a-a5d6-4df5-a324-3774217d0e6b?diagramType=Topology to reserve the lab
+> Note: Cisco account is required, an accounte can be created for free
+*2. Reserve, Cisco Anyconnet VPN credentials will be emailed to you
+> Cisco Anyconnect can be download via the following link: https://developer.cisco.com/site/sandbox/anyconnect/
+
+### Topology used in the example:
+
+## Instructions
 
 ### Cloning repo and installing requirements via pip
 
