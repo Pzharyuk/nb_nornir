@@ -48,7 +48,7 @@ nb = pynetbox.api(
     token=os.getenv("NB_TOKEN")  # NB_TOKEN is loaded from Environment Variable
 )
 ```
-Visit python-dotenv libary on PyPi for more details: https://pypi.org/project/python-dotenv/
+Visit python-dotenv library on PyPi for more details: https://pypi.org/project/python-dotenv/
 
 #### Example 
 ```zsh
