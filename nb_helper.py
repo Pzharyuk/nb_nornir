@@ -14,7 +14,7 @@ session.verify = False
 
 # CONNECT TO DEV NETBOX ENVIROMENT #
 nb = pynetbox.api(
-    os.getenv("NB_URL"), 
-    token=os.getenv("NB_TOKEN") # TOKEN IS LOADED INTO ENV FROM .env FILE #
+    os.getenv("NB_URL"), # NB_URL is loaded from  Environmet Variable
+    token=os.getenv("NB_TOKEN") # NB_TOKEN is loaded from  Environmet Variable
 )
 nb.http_session = session # USED WITH HTTPS #
