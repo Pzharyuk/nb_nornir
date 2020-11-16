@@ -18,7 +18,7 @@ dev = []
 
 # MAKE A REQUEST TO NETBOX AND GET DEVICES FOR A SPECIFIC SITE #
 try:
-    devices = nb_prd.dcim.devices.filter(
+    devices = nb.dcim.devices.filter(
         site=input("Enter site code: "), 
         has_primary_ip=True
     )
