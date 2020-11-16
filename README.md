@@ -30,12 +30,25 @@ Cisco Modeling Labs (CML2.1) is used to generate a host file. This project is no
 5. Install required python packages via `pip install -r requirements.txt`
 
 ### Using .ENV
-This project uses .env file to popopulate environment variables used in the code<br/>
+This project uses .env file to popopulate Environment Variables used in the code.<br/>
+Environment variables which are set in the .env file are exported during code execution.<br/>
+
+#### Example:
 1. Populate .env file with Netbox url and token
 ```
 NB_TOKEN=123423454565678678123234345
 NB_URL=http://example-netbox.com:8085
 ```
+```
+import os
+from dotenv import load_dotenv
+
+nb = pynetbox.api(
+    os.getenv("NB_URL"), # NB_URL is loaded from  Environmet Variable
+    token=os.getenv("NB_TOKEN")  # NB_TOKEN is loaded from Environment Variable
+)
+```
+Visit python-dotenv libary on PyPi for more details: https://pypi.org/project/python-dotenv/
 
 #### Example 
 ```zsh
