@@ -34,11 +34,12 @@ This project uses .env file to popopulate Environment Variables used in the code
 Environment variables which are set in the .env file are exported during code execution.<br/>
 
 #### Example:
-1. Populate .env file with Netbox url and token
+*1. Populate .env file with Netbox url and token.*
 ```
 NB_TOKEN=123423454565678678123234345
 NB_URL=http://example-netbox.com:8085
 ```
+*2. Load Environment Variables using "os" labrary and dotenv.*
 ```
 import os
 from dotenv import load_dotenv
