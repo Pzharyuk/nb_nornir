@@ -11,11 +11,11 @@ Cisco Modeling Labs (CML2.1) is used to generate a host file. This project is no
 ![Netbox Devices](/netbox_devices.png)<br/>
 
 ### CML2 Prerequisites:
-*1. Go to https://devnetsandbox.cisco.com/RM/Diagram/Index/685f774a-a5d6-4df5-a324-3774217d0e6b?diagramType=Topology to reserve the lab<br/>
+*1. Go to https://devnetsandbox.cisco.com/RM/Diagram/Index/685f774a-a5d6-4df5-a324-3774217d0e6b?diagramType=Topology to reserve the lab.*<br/>
   <i> Note: Cisco account is required, an account can be created for free</i><br/>
-*2. It should take a few minutes to reserver the lab, wait for Cisco Anyconnet VPN credentials will be emailed to you.<br/>
-  <i> Note: Cisco Anyconnect can be download via the following link: https://developer.cisco.com/site/sandbox/anyconnect/</i><br/>
-*3. Once connected, CML2 lab can be accesses via https://10.10.20.161 - credentials are porvided inside the sandbox.<br/>
+*2. It should take a few minutes to reserver the lab, wait for Cisco Anyconnet VPN credentials will be emailed to you.*<br/>
+  <i> Note: Cisco Anyconnect can be download via the following link: https://developer.cisco.com/site/sandbox/anyconnect/*</i><br/>
+*3. Once connected, CML2 lab can be accesses via https://10.10.20.161 - credentials are porvided inside the sandbox.*<br/>
 
 ### Topology used in the example:
 ![CML2 Topology](/cml_topology.png)
