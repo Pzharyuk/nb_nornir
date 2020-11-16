@@ -17,3 +17,4 @@ requests==2.24.0
 rich==8.0.0
 scrapli==2020.8.28
 python-dotenv==0.14.0  
+pynetbox
