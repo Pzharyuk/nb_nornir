@@ -39,7 +39,7 @@ Environment variables which are set in the .env file are exported during code ex
 NB_TOKEN=123423454565678678123234345
 NB_URL=http://example-netbox.com:8085
 ```
-*2. Load Environment Variables using "os" labrary and dotenv.*
+*2. Load Environment Variables using "os" library and dotenv.*
 ```
 import os
 from dotenv import load_dotenv
