@@ -1,3 +1,4 @@
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/Pzharyuk/nb_nornir)
 # Generate dynamic host.yaml for Nornir from Netbox
 This code is used to gererate a Nornir host file, it was specifically designed to be used with Cisco devices, but can be changed to be used with any vendor. 
 Cisco Modeling Labs (CML2.1) is used to generate a host file. This project is not focused on how to get devices into Netbox, it assumes that the user has some prior knowledge with Netbox.
@@ -71,5 +72,3 @@ Enter site code: devnetsandbox
 > CML2 Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/685f774a-a5d6-4df5-a324-3774217d0e6b?diagramType=Topology
 > Cisco Anyconnect: https://developer.cisco.com/site/sandbox/anyconnect/
 > Rich library: https://pypi.org/project/rich/
-
-[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/Pzharyuk/nb_nornir)
