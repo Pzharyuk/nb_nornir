@@ -1,5 +1,5 @@
 import pynetbox
-from nb_helper import nb_prd
+from nb_helper import nb
 import yaml
 import jinja2
 from rich.console import Console
