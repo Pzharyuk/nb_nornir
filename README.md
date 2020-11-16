@@ -60,7 +60,7 @@ Visit python-dotenv library on PyPi for more details: https://pypi.org/project/p
 (venv) ~/nb_nornir  ‹main› » python gen_hostfile_from_nb.py
 Enter site code: devnetsandbox
 ```
-### Example output will be presented using tables and will be color coded using rich python library.<br/>
+### Example output will be presented using tables and will be color coded using Rich python library.<br/>
 ![Example output](/nb_host_file_output1.png)<br/>
 ### At this point the /inventory/hosts.yaml file should be populated.<br/>
 ![Example output2](/nb_host_file_output2.png)<br/>
@@ -69,3 +69,4 @@ Enter site code: devnetsandbox
 > Netbox on Docker GitHub page:</b> https://github.com/netbox-community/netbox-docker.git
 > CML2 Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/685f774a-a5d6-4df5-a324-3774217d0e6b?diagramType=Topology
 > Cisco Anyconnect: https://developer.cisco.com/site/sandbox/anyconnect/
+> Rich library: https://pypi.org/project/rich/
