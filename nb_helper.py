@@ -12,15 +12,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 session = requests.Session()
 session.verify = False
 
-# CONNECT TO DEV/PRD NETBOX ENVIROMENT #
-nb_dev = pynetbox.api(
-    os.getenv("DEV_URL"),
-    token=os.getenv("DEV_TOKEN") # TOKEN IS LOADED INTO ENV FROM .env FILE #
-)
-
-
+# CONNECT TO DEV NETBOX ENVIROMENT #
 nb_prd = pynetbox.api(
-    os.getenv("PRD_URL"), 
-    token=os.getenv("PRD_TOKEN") # TOKEN IS LOADED INTO ENV FROM .env FILE #
+    os.getenv("DEV_URL"), 
+    token=os.getenv("DEV_TOKEN") # TOKEN IS LOADED INTO ENV FROM .env FILE #
 )
 nb_prd.http_session = session # USED WITH HTTPS #
