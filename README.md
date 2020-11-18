@@ -1,6 +1,6 @@
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/Pzharyuk/nb_nornir)
 # Generate dynamic host.yaml for Nornir using Netbox as the inventory source.
-This code is used to gererate a Nornir host file, example uses Cisco virtual routers and switches, however, the code can be changed to be used with any vendor. 
+This code is used to gererate a Nornir host file, example uses Cisco virtual routers and switches, however the code can be changed to be used with any vendor. 
 This project is not focused on how to get devices into Netbox, it assumes that the user has some prior experience with Netbox.
 
 ### Netbox Prerequisites:
