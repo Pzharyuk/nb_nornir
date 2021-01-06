@@ -31,8 +31,8 @@ This project is not focused on how to get devices into Netbox, it assumes that t
 5. Install required python packages via `pip install -r requirements.txt`
 
 ### Using .ENV
-This project uses .env file to popopulate Environment Variables used in the code.<br/>
-Environment variables which are set in the .env file are exported during code execution.<br/>
+This project uses .env file to populate Environment Variables used in the code.<br/>
+Environment variables which are set in the .env file are exported during run time.<br/>
 
 #### Example:
 *1. Populate .env file with Netbox url and token.*
@@ -44,6 +44,7 @@ NB_URL=http://example-netbox.com:8085
 ```
 import os
 from dotenv import load_dotenv
+load_dotenv()
 
 nb = pynetbox.api(
     os.getenv("NB_URL"), # NB_URL is loaded from  Environmet Variable
